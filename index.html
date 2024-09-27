@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./stylesheets/styles.css">
+    <title>What is Java ?</title>
+</head>
+
+<body>
+    <div class="all">
+        <div class="sideBar">
+            <div class="sideBarHeader">
+                <img height="" width="" src="./images/wikipedia-logo.png" alt="wikipedia-logo">
+            </div>
+    
+            <div class="links">
+                <a href="#">Accueil</a>
+                <a href="#">Portails thématiques</a>
+                <a href="#">Article au hasard</a>
+                <a href="#">Contact</a>
+            </div>
+    
+            <div class="contribuer">
+                <h2>Contribuer</h2>
+                <hr>
+                <nav>
+                    <a href="">Debuter sur Wikipedia</a>
+                    <a href="">Communauté</a>
+                    <a href="">Modifications récentes</a>
+                    <a href="">Faire un don</a>
+                    <a href="">Aide</a>
+                </nav>
+            </div>
+        </div>
+        <div class="content">
+            <h1>Langage de programmation Java</h1>
+            <hr>
+            <p>
+                <strong>Java</strong> est langage de programmation de haut niveau orienté objet crée par James Gosling et
+                Patrick Naughton, employés de
+                Sun Microsystems, avec le soutien de Bill Joy (cofondateur de Sun Microsystems en 1982), présenté
+                officiellement le 23 mai 1995 au SunWorld.
+            </p>
+            <p>La société Sun est rachetée en 2009 par la société Oracle qui detient et maintient désormais Java.</p>
+    
+            <p>Un logiciel écrit en language Java a pour particularité d'etre vers un code intermédiaire formé de
+                <i>bytecodes</i> qui peut etre exécutée dans une machine virtuelle java (JVM) en faisant abstraction du
+                systeme d'exploitation.</p>
+    
+            <div class="sommaire">
+                <h3>Sommaire</h3>
+                <ol class="oderedList">
+                    <li><a href="#introduction">Introduction</a></li>
+                    <li><a href="#description">Description</a></li>
+                    <li><a href="#langage">Langage</a></li>
+                    <ol>
+                        <li><a href="#syntaxe">Syntaxe</a></li>
+                        <li><a href="#motreserve">Mot résérvés, primitifs et littéraux</a></li>
+                        <li><a href="#structure">Structures de controle</a></li>
+                    </ol>
+                    <li><a href="#" target="_blank">Liens externes</a></li>
+                </ol>
+            </div>
+    
+            <div>
+                <h2 id="introduction">Introduction</h2>
+                <hr>
+                <p>
+                    Dans le cadre de votre TP #1 pour le cours Web I: Langages de présentation, vous devez reproduire une
+                    maquette d'un article ayant un style basé sur Wikipedia.
+                </p>
+                <p>
+                    Ce premier travail permet de s'assurer que vous maitriser bien les bases du HTML et du CSS pour une mise
+                    en page HTML en appliquant certains styles CSS.
+                </p>
+            </div>
+    
+            <div>
+                <h2 id="description">Description</h2>
+                <hr>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa odit at, accusantium autem possimus
+                    voluptatibus iusto consequuntur maiores. Voluptate earum adipisci culpa tempora nam blanditiis ipsam
+                    ducimus ad necessitatibus impedit error animi, vel molestias temporibus ratione asperiores iste magnam
+                    ullam, neque quod. Minus deleniti dicta cum saepe quae quod enim quam provident? Adipisci incidunt
+                    beatae, obcaecati iusto ad quo quia consectetur aspernatur, exercitationem facilis numquam quos deleniti
+                    reprehenderit sapiente fugiat architecto. Praesentium non dolorum atque ab laudantium illum quibusdam
+                    libero voluptatibus cumque, fuga perspiciatis labore ea aliquid quos aliquam tenetur placeat adipisci
+                    ipsum odio architecto numquam enim quasi? Architecto, omnis. Quod repellat rerum sequi commodi.
+                </p>
+    
+            </div>
+    
+            <div>
+                <h2 id="langage">Langage</h2>
+                <hr>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia voluptas reiciendis sint ipsam
+                    temporibus? Eos.
+                </p>
+            </div>
+    
+            <div>
+                <h2 id="syntaxe">Syntaxe</h2>
+                <hr>
+                <p>
+                    Voici un exemple d'un programme Hello world typique écrit en Java :
+                </p>
+    
+                <pre><code>public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello world!");
+    }
+}</code></pre>
+    
+            </div>
+    
+            <div>
+                <h2 id="motreserve">Mot résérvés, primitifs et littéraux</h2>
+                <hr>
+               <pre>
+abstract else instanceof static try boolean false
+assert (1.4) enum (5.0) interface strictfp (1.2) volatile byte true break extends native super while char
+case final new switch double
+catch finally package synchronized float
+class for private this int
+const (*) goto (*) protected throw long
+continue if public throws short
+default implements return transient void null
+do import</pre>
+            </div>
+    
+            <div>
+                <p>
+                    Notes: 
+                    <ul>
+                        <p><li>(*) ces mots clefs sont réservés mais n'ont pas de signification pour le compilateur (il est juste interdi d'employer ce nom pour une variable par exemple)</li></p>
+                        <p><li>(1.2), (1.4) et (5.0) ces mots clefs ont été ajoutés avec la version indiquée du langage.</li></p>
+                    </ul>
+                </p>
+            </div>
+    
+            <div>
+                <h2 id="structure">Structures de controle</h2>
+                <hr>
+                <p>
+                    Bien qu'elles aient toutes un role similaire, chaque boucle est pourtant adaptée a une situation:
+                    <li>Structure <strong>tant que</strong> (adaptée pour effectuer des operations tant qu'une condition est remplie):</li>
+    <pre><code>while (&lt;expression booléenne&gt;) {
+    instruction(s)    
+}</code></pre>
+                </p>
+    
+                <p>
+                    <li>Structure <strong>faire ... tant</strong> que (comme la structure <strong>tant que</strong> mais la première itération est exécutée quelle que soit la condition, pour les autres itérations la condition doit etre remplie):</li>
+    <pre><code>do {
+    instruction(s)
+}
+while (&lt;expression booléenne&gt;);</code></pre>
+                </p>
+    
+                <p></p>
+                    <li>Structure <strong>pour</strong> (adaptée lorsqu'une collection doit etre parcourue en totalité pour traitement):</li>
+    <pre><code>for (&lt;expression booléenne&gt;; &lt;condition de poursuite&gt;; &lt;expression d'incrémentation&gt;) {
+        instruction(s)
+}</code></pre>
+                </p>
+    
+            </div>
+    
+            <div class="liensExternes">
+                <h2 id="structure">Liens externes</h2>
+                <hr>
+                <ul>
+                    <li><a href="https://www.google.com" target="_blank">Google</a></li>
+                    <li><a href="https://en.wikipedia.org/wiki/Main_Page" target="_blank">Wikipedia</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <span>
+            &copy; Jordan Rioux-Leclair, tous droits réservés <br>
+            Dernière modification de cette page le 19 septembre 2023 à 8:00
+        </span>
+    </footer>
+</body>
+
+</html>

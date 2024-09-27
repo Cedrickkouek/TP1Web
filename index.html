@@ -135,13 +135,11 @@ do import</pre>
             </div>
     
             <div>
-                <p>
-                    Notes: 
+                <span>Notes:</span>
                     <ul>
-                        <p><li>(*) ces mots clefs sont réservés mais n'ont pas de signification pour le compilateur (il est juste interdi d'employer ce nom pour une variable par exemple)</li></p>
-                        <p><li>(1.2), (1.4) et (5.0) ces mots clefs ont été ajoutés avec la version indiquée du langage.</li></p>
+                        <li>(*) ces mots clefs sont réservés mais n'ont pas de signification pour le compilateur (il est juste interdi d'employer ce nom pour une variable par exemple)</li>
+                        <li>(1.2), (1.4) et (5.0) ces mots clefs ont été ajoutés avec la version indiquée du langage.</li>
                     </ul>
-                </p>
             </div>
     
             <div>
@@ -149,27 +147,30 @@ do import</pre>
                 <hr>
                 <p>
                     Bien qu'elles aient toutes un role similaire, chaque boucle est pourtant adaptée a une situation:
-                    <li>Structure <strong>tant que</strong> (adaptée pour effectuer des operations tant qu'une condition est remplie):</li>
+                </p>
+                <ul>
+                <li>
+                        Structure <strong>tant que</strong> (adaptée pour effectuer des operations tant qu'une condition est remplie):
     <pre><code>while (&lt;expression booléenne&gt;) {
     instruction(s)    
 }</code></pre>
-                </p>
+                </li>
     
-                <p>
-                    <li>Structure <strong>faire ... tant</strong> que (comme la structure <strong>tant que</strong> mais la première itération est exécutée quelle que soit la condition, pour les autres itérations la condition doit etre remplie):</li>
+                <li>
+                    Structure <strong>faire ... tant</strong> que (comme la structure <strong>tant que</strong> mais la première itération est exécutée quelle que soit la condition, pour les autres itérations la condition doit etre remplie):
     <pre><code>do {
     instruction(s)
 }
 while (&lt;expression booléenne&gt;);</code></pre>
-                </p>
+                </li>
     
-                <p></p>
-                    <li>Structure <strong>pour</strong> (adaptée lorsqu'une collection doit etre parcourue en totalité pour traitement):</li>
+                <li>Structure <strong>pour</strong> (adaptée lorsqu'une collection doit etre parcourue en totalité pour traitement):
     <pre><code>for (&lt;expression booléenne&gt;; &lt;condition de poursuite&gt;; &lt;expression d'incrémentation&gt;) {
         instruction(s)
 }</code></pre>
-                </p>
-    
+                </li>
+
+                </ul>
             </div>
     
             <div class="liensExternes">
